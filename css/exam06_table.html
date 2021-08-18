@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #wrapper {
+            width: 700px;
+            margin: 0px auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #04AA6D;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>bno</th>
+                    <th>title</th>
+                    <th>content</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>오늘은 따뜻해?</td>
+                    <td>온도가 11도까지 올라간다네요.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>목요일입니다.</td>
+                    <td>내일 금요일은 화면 설계 발표합니다.</td>
+                </tr>
+                <tr>
+                    <!-- 셀 병합과 같은 개념입니다. -->
+                    <td colspan="3">
+                        <button>추가</button>
+                        <button>삭제</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

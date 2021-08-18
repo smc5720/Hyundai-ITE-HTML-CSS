@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            color: palegreen;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div {
+            background-color: red;
+            border: 1px solid black;
+        }
+
+        .class1 {
+            background-color: yellow;
+        }
+
+        #div1 {
+            background-color: green;
+        }
+
+        /* 공백의 유무에 따른 디테일 확인할 것 */
+        /* div.class2는 div 태그이면서 class2인 것을 찾는다. */
+        #div2 .class2 {
+            background-color: blue;
+        }
+
+        /* .과 >의 차이는 전체를 찾느냐, 바로 밑에만 찾느냐의 차이이다. */
+        #div2>.class2 {
+            background-color: slateblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>A</div>
+    <div class="class1">B</div>
+    <div class="class1">C</div>
+    <div id="div1">D</div>
+    <hr />
+
+    <div id="div2">
+        <div>E</div>
+        <div class="class2">F</div>
+        <div id="div3">
+            <div class="class2">G</div>
+        </div>
+    </div>
+</body>
+
+</html>
