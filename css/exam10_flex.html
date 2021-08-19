@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div {
+            border: 1px solid black;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            background-color: #ddd;
+            height: 200px;
+            /* 수직 정렬 */
+            align-items: center;
+            /* 수평 정렬 */
+            justify-content: center;
+        }
+
+        .flex-container > div {
+            width: 100px;
+            height: 100px;
+        }
+
+        #div1 {
+            background-color: red;
+            flex-grow: 1;
+            /* flex-grow: 1; */
+        }
+
+        #div2 {
+            background-color: green;
+            flex-grow: 1;
+            /* flex-grow: 1; */
+        }
+
+        #div3 {
+            background-color: yellow;
+            /* flex-grow: 1; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div id="div1">1</div>
+        <div id="div2">2</div>
+        <div id="div3">3</div>
+    </div>
+</body>
+
+</html>

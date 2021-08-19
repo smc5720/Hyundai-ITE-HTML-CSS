@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        div {
+            border: 1px solid black;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: indianred;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- display의 약자는 'd' -->
+    <!-- 'd-flex'는 해당 태그를 flex container로 만들어준다. -->
+    <div class="d-flex align-items-center" style="height: 300px;">
+        <div class="item flex-grow-1">1</div>
+        <div class="item flex-grow-1">2</div>
+        <div class="item flex-grow-1">3</div>
+    </div>
+</body>
+
+</html>
